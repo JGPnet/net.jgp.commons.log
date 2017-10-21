@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class LoggerFactory {
 
-    private static LoggerFactory instance = null;
+    private static transient LoggerFactory instance = null;
     private static int level;
 
     private HashMap<String, Logger> loggers;
